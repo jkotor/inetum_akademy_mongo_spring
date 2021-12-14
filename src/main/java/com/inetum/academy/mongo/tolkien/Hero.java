@@ -9,12 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document
 @Data
+@Document(collection = "heroes")
 public class Hero {
 
     public enum Race {
-        ELF, HOBBIT, HUMAN, ORC;
+        ELF, HOBBIT, HUMAN, ORC
     }
 
     public enum MagicType {
